@@ -19,6 +19,7 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding: 2rem 2rem;
 }
 
 .description {
