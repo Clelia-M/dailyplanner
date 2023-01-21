@@ -6,11 +6,11 @@ var businessHours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", 
 
 for (var i = 0; i < businessHours.length; i++) {
     var hour = businessHours[i];
-    var hourIn12Format = moment(hour, "hh A").format("hh A");
+    var hourIn12Format = moment(hour, "hh A").format('hh A');
     businessHours[i] = hourIn12Format;
 }
 
-// Loop trough the business hours and create a timeblock for each of them
+// Loop through the business hours and create a timeblock for each of them
 for (var i = 0; i < businessHours.length; i++) {
     var $timeblock = $("<div>", { class: "time-block" });
 
