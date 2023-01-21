@@ -48,6 +48,10 @@ for (var i = 0; i < businessHours.length; i++) {
 
         // Get the time of the timeblock
         var time = $(this).siblings(".hour").text();
+        
+        // Save the event in the local storage
+        localStorage.setItem(time, inputValue);
+
 
     })
 }
