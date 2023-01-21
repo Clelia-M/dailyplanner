@@ -34,6 +34,10 @@ for (var i = 0; i < businessHours.length; i++) {
     var time = businessHours[i];
     $eventTextarea.val(localStorage.getItem(time));
 
+    // Add a save button to each timeblock
+    var $saveButton = $("<button>", {class: "saveBtn" }).html("<i class='fas fa-save' title='Save Event'></i>");
+    $timeblock.append($saveButton);
+
 
 
 }
