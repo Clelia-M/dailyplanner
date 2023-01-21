@@ -54,7 +54,8 @@ for (var i = 0; i < businessHours.length; i++) {
     });
 
     // Check if the current time is past, present, or future
-    var currentTime = moment();
+    // var currentTime rounded to hour
+    var currentTime = moment().startOf('hour');
     if (moment(businessHours[i], "hh A").isAfter(currentTime)) {
         $timeblock.addClass("future");
     } else if (moment(businessHours[i], "hh A").isSame(currentTime)) {
