@@ -53,7 +53,7 @@ for (var i = 0; i < businessHours.length; i++) {
         $(".container").prepend(alert);
     });
 
-    // Check if the current time is past, present or future
+    // Check if the current time is past, present, or future
     var currentTime = moment().format("hh A");
     if (businessHours[i] < currentTime) {
         $timeblock.addClass("past");
