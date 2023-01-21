@@ -56,4 +56,14 @@ for (var i = 0; i < businessHours.length; i++) {
         var alert = $("<p>").text("Congrats, event saved successfully!");
         $("container").prepend(alert);
     });
-}
+
+    // Check if the current time is past, present or future
+    var currentTime = moment().format("hh A");
+    if (businessHours[i] < currentTime) {
+        $timeblock.addClass("past");
+    } else if (businessHours[i] === currentTime) {
+        $timeblock.addClass("present");
+    } else {
+        $timeblock.addClass("future");
+    }
+};
