@@ -22,7 +22,7 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 7. Styling of each element updating the CSS starter code
 
 ## Link to deployed Application
-[Daily Planner App](https://clelia-m.github.io/codequiz/index.html)
+[Daily Planner App](https://clelia-m.github.io/dailyplanner/)
 
 ## Final Results
-![Final app](https://github.com/Clelia-M/codequiz/blob/55ae8566c694d36ba37c01c7ae59635e36a50be8/app%20final/1_Start%20page.png)
+![Final app](https://github.com/Clelia-M/dailyplanner/blob/67688daa76d72187adacbeae4f45b82534849509/assets/img/Daily%20Planner.png)
