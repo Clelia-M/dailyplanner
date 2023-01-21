@@ -30,4 +30,10 @@ for (var i = 0; i < businessHours.length; i++) {
     var $eventTextarea = $("<textarea>", {class: "description"});
     $timeblock.append($eventTextarea);
 
+    // Retrieve the event from local storage and set the textarea value
+    var time = businessHours[i];
+    $eventTextarea.val(localStorage.getItem(time));
+
+
+
 }
