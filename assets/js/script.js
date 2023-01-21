@@ -15,8 +15,11 @@ for (var i = 0; i < businessHours.length; i++) {
 }
 
 // Loop trough the business hours and create a timeblock for each of them
- for (var i = 0; i < businessHours.length; i++) {
-    var $timeblock = $("<div>", {class: "time-block"});
+for (var i = 0; i < businessHours.length; i++) {
+    var $timeblock = $("<div>", { class: "time-block" });
 
-    
+    // Create an hour container for each hour
+    var $hour = $("<div>", { class: "hour" });
+    $hour.html(businessHours[i]);
+    $timeblock.append($hour);
 }
