@@ -13,3 +13,10 @@ for (var i = 0; i < businessHours.length; i++) {
     var hourIn12Format = moment(hour, "hh A").format("hh A");
     businessHours[i] = hourIn12Format;
 }
+
+// Loop trough the business hours and create a timeblock for each of them
+ for (var i = 0; i < businessHours.length; i++) {
+    var $timeblock = $("<div>", {class: "time-block"});
+
+    
+}
