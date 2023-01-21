@@ -26,4 +26,8 @@ for (var i = 0; i < businessHours.length; i++) {
     // Add the timeblock to the container
     $(".container").append($timeblock);
 
+    // Add a textarea to each timeblock
+    var $eventTextarea = $("<textarea>", {class: "description"});
+    $timeblock.append($eventTextarea);
+
 }
