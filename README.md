@@ -13,13 +13,13 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 - [Final result](#final-results)
 
 # Workflow
-1. Set up of the current day at the top of the page using Moment js method and adding it to the #currentDay id
-2. Creation fo the array to hold the standard business hours (9am to 5pm)
-3. For loop that goes through the business hours array and converts the hours to 12 hour format using Moment Js method
+1. Set up of the current day at the top of the page using Moment js method and adding it to the #currentDay id.
+2. Creation fo the array to hold the standard business hours (9am to 5pm).
+3. For loop that goes through the business hours array and converts the hours to 12 hour format using Moment Js method.
 4. For loop that creates a time block for each hour in the business hours array. each time block includes: a div container with a class of time-block, a div with class hour displaying the hour, a text area for the event, and a save button. 
 5. Creation fo the event listener on the save button that gets the input value fromt he textarea when clicked; it saves the input value to the local storage uusing the hour as the key; it creates an alert to the top of the planner that the event was save successfully.
 6. For loop to set the current time and compare it to the hour in the business hours array. this allows to colore code based on present, past or future hour. 
-7. Styling of each element updating the CSS starter code
+7. Styling of each element updating the CSS starter code.
 
 ## Link to deployed Application
 [Daily Planner App](https://clelia-m.github.io/dailyplanner/)
