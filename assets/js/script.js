@@ -54,12 +54,12 @@ for (var i = 0; i < businessHours.length; i++) {
     });
 
     // Check if the current time is past, present, or future
-    var currentTime = moment().format("hh A");
-    if (businessHours[i] < currentTime) {
-        $timeblock.addClass("past");
-    } else if (businessHours[i] === currentTime) {
+    var currentTime = moment();
+    if (moment(businessHours[i], "hh A").isAfter(currentTime)) {
+        $timeblock.addClass("future");
+    } else if (moment(businessHours[i], "hh A").isSame(currentTime)) {
         $timeblock.addClass("present");
     } else {
-        $timeblock.addClass("future");
+        $timeblock.addClass("past");
     }
 };
