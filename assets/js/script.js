@@ -22,4 +22,8 @@ for (var i = 0; i < businessHours.length; i++) {
     var $hour = $("<div>", { class: "hour" });
     $hour.html(businessHours[i]);
     $timeblock.append($hour);
+
+    // Add the timeblock to the container
+    $(".container").append($timeblock);
+
 }
