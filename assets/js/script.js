@@ -23,7 +23,7 @@ for (var i = 0; i < businessHours.length; i++) {
     $(".container").append($timeblock);
 
     // Add a textarea to each timeblock
-    var $eventTextarea = $("<textarea>", {class: "description"});
+    var $eventTextarea = $("<textarea>", { class: "description" });
     $timeblock.append($eventTextarea);
 
     // Retrieve the event from local storage and set the textarea value
@@ -31,16 +31,16 @@ for (var i = 0; i < businessHours.length; i++) {
     $eventTextarea.val(localStorage.getItem(time));
 
     // Add a save button to each timeblock
-    var $saveButton = $("<button>", {class: "saveBtn" }).html("<i class='fas fa-save' title='Save Event'></i>");
+    var $saveButton = $("<button>", { class: "saveBtn" }).html("<i class='fas fa-save' title='Save Event'></i>");
     $timeblock.append($saveButton);
 
     // Add an event listener to the save button
     $saveButton.on("click", function () {
 
         // Get the input value
-        var inputValue = $(this).siblings("description").val();
-        // set the textarea value to the input value
-        $(this).siblings("description").val(inputValue);
+        var inputValue = $(this).siblings(".description").val();
+        // Set the textarea value to the input value
+        $(this).siblings(".description").val(inputValue);
 
         // Get the time of the timeblock
         var time = $(this).siblings(".hour").text();
