@@ -50,7 +50,7 @@ for (var i = 0; i < businessHours.length; i++) {
 
         // Create a new paragraph and show the alert on the top of the planner
         var alert = $("<p>").text("Congrats, event saved successfully!");
-        $("container").prepend(alert);
+        $(".container").prepend(alert);
     });
 
     // Check if the current time is past, present or future
