@@ -48,10 +48,12 @@ for (var i = 0; i < businessHours.length; i++) {
 
         // Get the time of the timeblock
         var time = $(this).siblings(".hour").text();
-        
+
         // Save the event in the local storage
         localStorage.setItem(time, inputValue);
 
-
-    })
+        // Create a new paragraph and show the alert on the top of the planner
+        var alert = $("<p>").text("Congrats, event saved successfully!");
+        $("container").prepend(alert);
+    });
 }
