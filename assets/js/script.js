@@ -1,9 +1,5 @@
-// Initialise moment.js
-moment().format();
-
-// Get the current day and display it at the top of the page
-var currentDay = moment().format("dddd, MMMM Do");
-$("#currentDay").html(currentDay);
+// Get the current day and display it at the top of the page (#currentDay id p html)
+$("#currentDay").text(moment().format("dddd, MMM, Do"));
 
 // Create an array to hold the standard business hours (9AM to 5PM)
 var businessHours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
