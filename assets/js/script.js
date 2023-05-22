@@ -51,6 +51,11 @@ for (var i = 0; i < businessHours.length; i++) {
         // Create a new paragraph and show the alert on the top of the planner
         var alert = $("<p>").text("Congrats, event saved successfully!");
         $(".container").prepend(alert);
+
+        // Make the success message disappear after 3 seconds (3000 milliseconds)
+        setTimeout(function () {
+            alert.remove();
+        }, 3000);
     });
 
     // Check if the current time is past, present, or future
