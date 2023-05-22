@@ -24,5 +24,7 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 ## Link to deployed Application
 [Daily Planner App](https://clelia-m.github.io/dailyplanner/)
 
-## Final Results
-![Final app](https://github.com/Clelia-M/dailyplanner/blob/67688daa76d72187adacbeae4f45b82534849509/assets/img/Daily%20Planner.png)
+## Final Results - Desktop & Mobile
+![Final app desktop](https://github.com/Clelia-M/dailyplanner/blob/ea7af2f78f04b823154bfefaf47d0f460bb17363/assets/img/Daily%20Planner_final%20results%20desktop.png)
+
+![Final app mobile](https://github.com/Clelia-M/dailyplanner/blob/ea7af2f78f04b823154bfefaf47d0f460bb17363/assets/img/Daily%20Planner_final%20result_mobile.png)
